@@ -2,7 +2,7 @@
 
 These materials belong to the TARA team and the authors they credit. They were shared with course participants and are not published in this repository. I keep private copies, retrieved on 15 November 2026, with a record of each source and file hash.
 
-If you are a TARA participant or staff member, you already have access to them through the course. Otherwise, ask the TARA team.
+If you are a TARA participant or staff member, you already have access to them through the course. Otherwise, ask the TARA team through [taraprogram.org](https://www.taraprogram.org/).
 
 ## Guides
 

@@ -60,7 +60,7 @@ This repository publishes one development case in full and the numbers needed to
 
 ## Course context
 
-This is my final project for TARA, the Technical Alignment Research Accelerator, Round 2 2026, Hong Kong cohort. The project follows TARA's participant project guide, its one-page report template, and its course weeks on linear probes, evaluations and AI control.
+This is my final project for [TARA](https://www.taraprogram.org/), the Technical Alignment Research Accelerator, Round 2 2026, Hong Kong cohort. The project follows TARA's participant project guide, its one-page report template, and its course weeks on linear probes, evaluations and AI control.
 
 Those course materials belong to the TARA team and are not published here. [docs/tara-course-materials.md](docs/tara-course-materials.md) lists the ones this project draws on.
 
