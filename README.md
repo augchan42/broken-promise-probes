@@ -45,7 +45,7 @@ The page shows three MLP neurons on short made-up prompts that tell the model to
 
 ## What is here
 
-- [TARA project resources](docs/tara/README.md) indexes the course guides, notebooks, readings and slides. It is a source index, not a downloaded archive.
+- [TARA project resources](docs/tara/README.md) indexes the course guides, notebooks, readings and slides. It includes dated downloaded copies with provenance and checksums.
 - `docs/feedback/` has the project plan, the findings to date and the bibliography.
 - `docs/adr/` has the decision records, including [what to explore after the probe failed](docs/adr/006-exploration-after-the-failed-probe.md).
 - `docs/superpowers/` has the test protocols, written before each test was scored.

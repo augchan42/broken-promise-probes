@@ -1,0 +1,280 @@
+[
+  {
+    "path": "guides/participant-project-guide.pdf",
+    "source_url": "https://drive.google.com/file/d/1TUO711McyHPPYb5MmnjIub_FxZ4_Aq-_8IaDUIMHCrQ/view",
+    "source_id": "1TUO711McyHPPYb5MmnjIub_FxZ4_Aq-_8IaDUIMHCrQ",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Participant Project Guide - Round 2 2026.pdf",
+    "source_sha256": "b11499d5add67b9b05ae41edbc5fbc293671fb724489d94067c3df1b7e87321b",
+    "sha256": "e34ab6db9a2f5fdb648f030b1c53bc08a0e81a47b1041effdeb564e61613889a",
+    "bytes": 430949,
+    "modifications": [
+      "Teacher/staff contact directory removed from page 18, including linked email addresses."
+    ]
+  },
+  {
+    "path": "readings/linear-probes.pdf",
+    "source_url": "https://app.slack.com/files/F0C5N54Q4QL",
+    "source_id": "F0C5N54Q4QL",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Linear_Probes_pre_reading.pdf",
+    "source_sha256": "a5e14f2007b112921d478088abcf2b8af278a360ae878e9c3f8aa6d51f9d45b0",
+    "sha256": "a5e14f2007b112921d478088abcf2b8af278a360ae878e9c3f8aa6d51f9d45b0",
+    "bytes": 65163,
+    "modifications": []
+  },
+  {
+    "path": "notebooks/linear-probes.ipynb",
+    "source_url": "https://drive.google.com/file/d/1PgOIqpRAbnQC02i-spLq_sa-O5_sy5WD/view",
+    "source_id": "1PgOIqpRAbnQC02i-spLq_sa-O5_sy5WD",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 1.3.1_Linear_Probes_exercises.ipynb",
+    "source_sha256": "eaa6fbf31aae0892fc1db7261ba42e64d943c7cbc92e19980b7b557fd9f16741",
+    "sha256": "8e7c7ca95af2326d4c23f547ae14ada099408892fe2167496fd8e9cc0c1a7b9d",
+    "bytes": 223597,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "guides/one-page-report-template.pdf",
+    "source_url": "https://drive.google.com/file/d/1w3y8fM2juTr3r29M-ujsiAzwoP6cCo8UZHEsCxOG_Z8/view",
+    "source_id": "1w3y8fM2juTr3r29M-ujsiAzwoP6cCo8UZHEsCxOG_Z8",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Report_ [your name(s)] – [project title].pdf",
+    "source_sha256": "46e190eaecbd8e83825a54597c0b5c7cf07bc91d5b69c691540e703458f868a7",
+    "sha256": "46e190eaecbd8e83825a54597c0b5c7cf07bc91d5b69c691540e703458f868a7",
+    "bytes": 93754,
+    "modifications": []
+  },
+  {
+    "path": "guides/ideas-form-best-practices.pdf",
+    "source_url": "https://drive.google.com/file/d/12hqT9TuCxtRHCgEUc9O0H0aKYpfUKNcV1eee1X3gnTU/view",
+    "source_id": "12hqT9TuCxtRHCgEUc9O0H0aKYpfUKNcV1eee1X3gnTU",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Ideas Form Best Practices.pdf",
+    "source_sha256": "4beb15939eaaae740102fe9c3a90b9b036c90418edf3f96e2590bc683250d57f",
+    "sha256": "4beb15939eaaae740102fe9c3a90b9b036c90418edf3f96e2590bc683250d57f",
+    "bytes": 121046,
+    "modifications": []
+  },
+  {
+    "path": "guides/compute-and-api-access.pdf",
+    "source_url": "https://drive.google.com/file/d/1KlDTjIzzO3Nzl6trME8B2sVtKgh-bLs4Awslz3RcORI/view",
+    "source_id": "1KlDTjIzzO3Nzl6trME8B2sVtKgh-bLs4Awslz3RcORI",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "TARA Compute and API Access.pdf",
+    "source_sha256": "aed061c10675ef2c4a1333c0abc3fa7dea84695e8a776c8b2d1e4886529e4a4c",
+    "sha256": "aed061c10675ef2c4a1333c0abc3fa7dea84695e8a776c8b2d1e4886529e4a4c",
+    "bytes": 165040,
+    "modifications": []
+  },
+  {
+    "path": "guides/weekly-curriculum-notes-and-errata.pdf",
+    "source_url": "https://drive.google.com/file/d/1PWLfIO6m-xuXKum-P5sGdbO2X7h7K57fSePSo19cPAw/view",
+    "source_id": "1PWLfIO6m-xuXKum-P5sGdbO2X7h7K57fSePSo19cPAw",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Weekly Curriculum Notes and Errata - Round 2 2026.pdf",
+    "source_sha256": "684d2e819a91c96b55283a37a327e48226a453894c719ad159722d6900db8978",
+    "sha256": "684d2e819a91c96b55283a37a327e48226a453894c719ad159722d6900db8978",
+    "bytes": 465450,
+    "modifications": []
+  },
+  {
+    "path": "notebooks/intro-to-evals.ipynb",
+    "source_url": "https://drive.google.com/file/d/1oH_ujja9sT2KO9bmMYHpdki-EuXymNVi/view",
+    "source_id": "1oH_ujja9sT2KO9bmMYHpdki-EuXymNVi",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 3.1_Intro_to_Evals_exercises.ipynb",
+    "source_sha256": "1023c02e559ac6dc2bda6c9dc1ff358932cedeae96aae94bcb091fa4f74191db",
+    "sha256": "7ade16636b757feb87e063afc8570e4e5a13f6b6a95119eaa0fef7ff0939011e",
+    "bytes": 114234,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "notebooks/dataset-generation.ipynb",
+    "source_url": "https://drive.google.com/file/d/1OxB-KU-pa2zeofnyjvER7FET0lmV8PUF/view",
+    "source_id": "1OxB-KU-pa2zeofnyjvER7FET0lmV8PUF",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 3.2_Dataset_Generation_exercises.ipynb",
+    "source_sha256": "765966cd0191ea5777fbf2499efe2ecb877e84146f8b2ff631d5827d128f95b8",
+    "sha256": "e36c65c50c445529f41187b49cf90009fa36e95382b4bbdae6e02bfd12da2405",
+    "bytes": 92657,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "notebooks/inspect-evals.ipynb",
+    "source_url": "https://drive.google.com/file/d/1Pthb79Jdth_RnAojKXZkcJRZ53EeBLNW/view",
+    "source_id": "1Pthb79Jdth_RnAojKXZkcJRZ53EeBLNW",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 3.3_Running_Evals_with_Inspect_exercises.ipynb",
+    "source_sha256": "5e19f4236f83a4b7137343c0a0bb64fbd054c7f7fd85cfc8c425451c027bede4",
+    "sha256": "e85b3818ea065a845b44b71943fe858c002876563a8008f047069af1f2c524a5",
+    "bytes": 121724,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "notebooks/llm-agents.ipynb",
+    "source_url": "https://drive.google.com/file/d/1Zm0ZP86IxhLdAKR1RBGfeiW8KDm01t70/view",
+    "source_id": "1Zm0ZP86IxhLdAKR1RBGfeiW8KDm01t70",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 3.4_LLM_Agents_exercises.ipynb",
+    "source_sha256": "a754ba84c9cd3ff5363e0cbc46e3aa1a8d38a438291786a926ff7b032b800232",
+    "sha256": "31b64e96fd7f56087e5e44413b44b6201bda5c558c5a46ac8e3f5e755c1021f2",
+    "bytes": 133163,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "notebooks/ai-control.ipynb",
+    "source_url": "https://drive.google.com/file/d/114JSXM7T4pSdzRWkBDNsIwy1mwzapnlZ/view",
+    "source_id": "114JSXM7T4pSdzRWkBDNsIwy1mwzapnlZ",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "[FIXED] 3.5_AI_Control_exercises.ipynb",
+    "source_sha256": "9fc68f0e765accf8feeb39b84543a767c6e20791deec55d4b7b2772adf2491be",
+    "sha256": "7f5f80b3f4ddde49c44efd8b3f6eabf2c518e984c7921dbc37ceb66e6b5dfad7",
+    "bytes": 131467,
+    "modifications": [
+      "Cleared saved outputs, execution counts, transient Colab/widget metadata. Cell source unchanged; not executed."
+    ]
+  },
+  {
+    "path": "readings/evals.pdf",
+    "source_url": "https://app.slack.com/files/F0CAE8JHNMT",
+    "source_id": "F0CAE8JHNMT",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Evals_pre_reading.pdf",
+    "source_sha256": "2797f58d847c48e6c6bdfd6cdc1fa25bb13f42cc0459c652a11b3ee1c797cb92",
+    "sha256": "2797f58d847c48e6c6bdfd6cdc1fa25bb13f42cc0459c652a11b3ee1c797cb92",
+    "bytes": 67293,
+    "modifications": []
+  },
+  {
+    "path": "readings/inspect.pdf",
+    "source_url": "https://app.slack.com/files/F0CC754U2SZ",
+    "source_id": "F0CC754U2SZ",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Inspect_pre_reading.pdf",
+    "source_sha256": "d3021cb277c17488c48e60b44eec481198ad6e893ce94c8f1789020c6b96d5fd",
+    "sha256": "d3021cb277c17488c48e60b44eec481198ad6e893ce94c8f1789020c6b96d5fd",
+    "bytes": 79680,
+    "modifications": []
+  },
+  {
+    "path": "readings/agents.pdf",
+    "source_url": "https://app.slack.com/files/F0CFUHV6R5W",
+    "source_id": "F0CFUHV6R5W",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Agents_pre_reading.pdf",
+    "source_sha256": "7de0912ecc4d86b533834434df98b56d5023b0fac351178f8406cb058b44c875",
+    "sha256": "7de0912ecc4d86b533834434df98b56d5023b0fac351178f8406cb058b44c875",
+    "bytes": 72857,
+    "modifications": []
+  },
+  {
+    "path": "readings/ai-control.pdf",
+    "source_url": "https://app.slack.com/files/F0CGYFN6EQ2",
+    "source_id": "F0CGYFN6EQ2",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "AI_Control_pre_reading (2).pdf",
+    "source_sha256": "697390e9d2c5dcc198829b454ff82af0993e2ce8872eda844d33b714615fca4a",
+    "sha256": "697390e9d2c5dcc198829b454ff82af0993e2ce8872eda844d33b714615fca4a",
+    "bytes": 69223,
+    "modifications": []
+  },
+  {
+    "path": "slides/inspect-on-coke.pdf",
+    "source_url": "https://app.slack.com/files/F0CDR27FYP4",
+    "source_id": "F0CDR27FYP4",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Inspect-on-coke.pdf",
+    "source_sha256": "caa49bc8249848bd10f258a06676bf089c821632f60e13058068736a6861e517",
+    "sha256": "caa49bc8249848bd10f258a06676bf089c821632f60e13058068736a6861e517",
+    "bytes": 4898716,
+    "modifications": []
+  },
+  {
+    "path": "slides/week06-hk-taipei-afternoon.pdf",
+    "source_url": "https://app.slack.com/files/F0CA0G6QC6N",
+    "source_id": "F0CA0G6QC6N",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "week6-HK-Taipei-afternoon.pdf",
+    "source_sha256": "1c60aef305b40ee63e01c6b12a1bf7e1cea88bf14daa4d64d0699e2b23b984c8",
+    "sha256": "1c60aef305b40ee63e01c6b12a1bf7e1cea88bf14daa4d64d0699e2b23b984c8",
+    "bytes": 223044,
+    "modifications": []
+  },
+  {
+    "path": "slides/week07-hk-taipei-afternoon.pdf",
+    "source_url": "https://app.slack.com/files/F0CBUCFN8JE",
+    "source_id": "F0CBUCFN8JE",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "week7-HK-Taipei-afternoon.pdf",
+    "source_sha256": "51fe9bd39d5662db77f4d160a180a215e46a07d8ae3a3d65541cb0dab8059b81",
+    "sha256": "51fe9bd39d5662db77f4d160a180a215e46a07d8ae3a3d65541cb0dab8059b81",
+    "bytes": 457395,
+    "modifications": []
+  },
+  {
+    "path": "slides/hk-week07-evals.pdf",
+    "source_url": "https://drive.google.com/file/d/1irzSzviWlHA7l2T2TY_Xwa7HId8sKFcoTHeasfDKxfI/view",
+    "source_id": "1irzSzviWlHA7l2T2TY_Xwa7HId8sKFcoTHeasfDKxfI",
+    "retrieved_date": "2026-11-15",
+    "source_filename": " HX Week 7 - Intro to Evals.pdf",
+    "source_sha256": "f253446a82ce4dd257a24d57a751c36174a72ef2c0d14a9e1ce31db7ed830b14",
+    "sha256": "f253446a82ce4dd257a24d57a751c36174a72ef2c0d14a9e1ce31db7ed830b14",
+    "bytes": 5389254,
+    "modifications": []
+  },
+  {
+    "path": "slides/hk-week08-inspect.pdf",
+    "source_url": "https://drive.google.com/file/d/1eJviX_0cUMx75kNCvU5VtV3a6cM70NjTAB8pGUtZ3Os/view",
+    "source_id": "1eJviX_0cUMx75kNCvU5VtV3a6cM70NjTAB8pGUtZ3Os",
+    "retrieved_date": "2026-11-15",
+    "source_filename": " HKG Week 8 - Running Evals with INspect AI.pdf",
+    "source_sha256": "1e062fdff3cad7ad109ca172a1ec0bce239a82e451d24996c6200db4772bad5b",
+    "sha256": "1e062fdff3cad7ad109ca172a1ec0bce239a82e451d24996c6200db4772bad5b",
+    "bytes": 4840767,
+    "modifications": []
+  },
+  {
+    "path": "slides/hk-week09-agents.pdf",
+    "source_url": "https://drive.google.com/file/d/16_SzexoxEoYbY-LWSOMAfxyQbsLBHx8FTc-pkxVnvmg/view",
+    "source_id": "16_SzexoxEoYbY-LWSOMAfxyQbsLBHx8FTc-pkxVnvmg",
+    "retrieved_date": "2026-11-15",
+    "source_filename": " HKG Week 9 - Agentic Evaluations with Inspect.pdf",
+    "source_sha256": "32d09ae0310be5ac1fea2d8e5351ba4cfe456e5d48c03de885974019cc7c9acf",
+    "sha256": "32d09ae0310be5ac1fea2d8e5351ba4cfe456e5d48c03de885974019cc7c9acf",
+    "bytes": 4602123,
+    "modifications": []
+  },
+  {
+    "path": "slides/hk-week10-ai-control.pdf",
+    "source_url": "https://drive.google.com/file/d/1O7Zct9CIVw9QUH1x7FG5TrFphTnRgpuQilNXLXy-scg/view",
+    "source_id": "1O7Zct9CIVw9QUH1x7FG5TrFphTnRgpuQilNXLXy-scg",
+    "retrieved_date": "2026-11-15",
+    "source_filename": " HKG Week 10 - AI Control.pdf",
+    "source_sha256": "8ace770d29c8a653afdad67cefdac32ce8237156f3d72e63ceaf5461feb9911e",
+    "sha256": "8ace770d29c8a653afdad67cefdac32ce8237156f3d72e63ceaf5461feb9911e",
+    "bytes": 4404097,
+    "modifications": []
+  },
+  {
+    "path": "slides/hk-career-planning.pptx",
+    "source_url": "https://docs.google.com/presentation/d/1Qeqn3sXJkA9WCFvUfX9PI56UkvqP_B6G/edit",
+    "source_id": "1Qeqn3sXJkA9WCFvUfX9PI56UkvqP_B6G",
+    "retrieved_date": "2026-11-15",
+    "source_filename": "Week 10 4pm Next steps workshop Part 1.pptx",
+    "source_sha256": "d2205bf3872d324822786cc39459bef13425384c3d78e3a47e0ddebdc2cd0bc2",
+    "sha256": "d2205bf3872d324822786cc39459bef13425384c3d78e3a47e0ddebdc2cd0bc2",
+    "bytes": 136105,
+    "modifications": []
+  }
+]

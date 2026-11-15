@@ -2,17 +2,17 @@
 
 Source index prepared 15 November 2026 for the Broken Promise Probes project, TARA Round 2.
 
-**Status: links and a download checklist, not a downloaded archive.** Linked documents can change. The original sources remain authoritative. No course document, notebook, PDF, participant directory, or private feedback has been copied into this public repository.
+**Status: 24 downloaded snapshots are available in [snapshots/2026-11-15/](snapshots/2026-11-15/README.md).** Linked documents can change; the original sources remain authoritative. The guide copy omits its teacher/staff contact directory. Notebook outputs and transient execution metadata have been cleared; their cell source is unchanged. No participant directory, mentor/contact spreadsheet or private feedback is included.
 
 ## Project requirements: read these first
 
-| Resource | Why it matters | Suggested private snapshot |
+| Resource | Why it matters | Downloaded format |
 | --- | --- | --- |
-| [Participant Project Guide — Round 2](https://docs.google.com/document/d/1TUO711McyHPPYb5MmnjIub_FxZ4_Aq-_8IaDUIMHCrQ/edit) | Master guide: detailed-plan template, marking rubric, milestones, presentation and report requirements. The detailed-plan template is inside this document. | PDF plus editable export |
-| [One-page project report template](https://docs.google.com/document/d/1w3y8fM2juTr3r29M-ujsiAzwoP6cCo8UZHEsCxOG_Z8/edit) | Required report structure. The guide specifies 10 December for prize eligibility and detailed feedback. Recheck the live guide before submission. | Editable export |
+| [Participant Project Guide — Round 2](https://docs.google.com/document/d/1TUO711McyHPPYb5MmnjIub_FxZ4_Aq-_8IaDUIMHCrQ/edit) | Master guide: detailed-plan template, marking rubric, milestones, presentation and report requirements. The detailed-plan template is inside this document. | PDF |
+| [One-page project report template](https://docs.google.com/document/d/1w3y8fM2juTr3r29M-ujsiAzwoP6cCo8UZHEsCxOG_Z8/edit) | Required report structure. The guide specifies 10 December for prize eligibility and detailed feedback. Recheck the live guide before submission. | PDF |
 | [Ideas Form Best Practices](https://docs.google.com/document/d/12hqT9TuCxtRHCgEUc9O0H0aKYpfUKNcV1eee1X3gnTU/edit) | Example of a threat model, research gap, methods, MVP, limitations and feasibility. Useful when refining the report. | PDF |
 | [Compute and API Access](https://docs.google.com/document/d/1KlDTjIzzO3Nzl6trME8B2sVtKgh-bLs4Awslz3RcORI/edit) | Budget, extra-spend approval and reimbursement guidance. Keep receipts separately and privately. | PDF |
-| [Weekly Curriculum Notes and Errata — Round 2](https://docs.google.com/document/d/1PWLfIO6m-xuXKum-P5sGdbO2X7h7K57fSePSo19cPAw/edit) | Course fixes and notebook links. Use current-round headings rather than archived sections. | PDF or text snapshot |
+| [Weekly Curriculum Notes and Errata — Round 2](https://docs.google.com/document/d/1PWLfIO6m-xuXKum-P5sGdbO2X7h7K57fSePSo19cPAw/edit) | Course fixes and notebook links. Use current-round headings rather than archived sections. | PDF |
 
 ### Slack clarifications
 
@@ -25,7 +25,7 @@ Do not substitute a repository commit for the programme's requested submission p
 
 ## Technical notebooks
 
-Save notebooks as `.ipynb` if making a private offline archive. These links were identified from TARA staff posts or the course errata; the notebooks were **not downloaded or executed** for this index. Running them may incur API or GPU charges.
+The six notebooks are archived as `.ipynb` files in the snapshot. These source links were identified from TARA staff posts or the course errata. The notebooks were **not executed**; running them may incur API or GPU charges.
 
 | Topic | Notebook |
 | --- | --- |
@@ -40,7 +40,7 @@ For this project, prioritize probes, Inspect and AI control; the others support 
 
 ## Pre-readings and session materials
 
-These links point to Slack posts containing the attachments, not to copies stored here.
+These links point to the original Slack posts. Downloaded PDF copies are listed in the snapshot README.
 
 | Material | Source post |
 | --- | --- |
@@ -54,6 +54,8 @@ These links point to Slack posts containing the attachments, not to copies store
 | Week 7 HK/Taipei afternoon | [Session](https://tara-boe7303.slack.com/archives/C0BQ7R0PSF3/p1792829038468669) |
 
 ### Hong Kong lecture slides
+
+- [Career planning, original PowerPoint](snapshots/2026-11-15/slides/hk-career-planning.pptx) ([source](https://docs.google.com/presentation/d/1Qeqn3sXJkA9WCFvUfX9PI56UkvqP_B6G/edit))
 
 - [24 October: Evals](https://docs.google.com/presentation/d/1irzSzviWlHA7l2T2TY_Xwa7HId8sKFcoTHeasfDKxfI/edit)
 - [31 October: Inspect](https://docs.google.com/presentation/d/1eJviX_0cUMx75kNCvU5VtV3a6cM70NjTAB8pGUtZ3Os/edit)
@@ -70,14 +72,14 @@ Check the existing [ARENA materials notes](https://github.com/augchan42/ARENA_ma
 
 The mentor/project list surfaced closely related proposed work on probe effectiveness in control evaluations and multi-agent collusion detection. Consult the original list inside TARA; proposals should not be treated as validated results or as a reason to change the project's frozen evaluation retrospectively.
 
-## Archive checklist and provenance
+## Archive status and provenance
 
-- [ ] Save dated copies of the five project-requirement documents privately.
-- [ ] Save the six notebooks as `.ipynb`, without executing them merely to archive.
-- [ ] Save relevant pre-reading PDFs and slides privately.
-- [ ] Keep original source URLs, retrieval dates and file hashes beside any downloaded copies.
-- [ ] Review personal information and source permissions before adding full copies to a public repository.
+- [x] Save dated PDF exports of the five project-requirement documents.
+- [x] Save the six notebooks as `.ipynb`, without executing them.
+- [x] Save the five pre-readings, seven slide PDFs and the career-planning PowerPoint.
+- [x] Record original source URLs, retrieval date, original and archived SHA-256 hashes, and transformations in the snapshot manifest.
+- [x] Remove the guide's teacher/staff contact directory; exclude personal directories and private feedback.
 
 The Slack review covered announcements, project help, Hong Kong, linear probes, intro to evals/dataset generation, Inspect, agents and AI control channels, plus relevant threads. It was a prioritized review, not an exhaustive workspace export, and did not search private DMs.
 
-The five core Google Docs were readable during the review. A metadata check did not establish their public-sharing or copying settings. No explicit restriction is inferred from that missing metadata, but this index does not claim that readable cohort material is licensed for public redistribution. Linked third-party materials retain their own terms; the repository's MIT licence does not relicense them.
+The five core Google Docs were readable during the review. A metadata check did not establish their public-sharing or copying settings. No explicit restriction is inferred from that missing metadata. These copies were archived at the repository owner's request. Third-party materials retain their own terms; the repository's MIT licence does not relicense them.
