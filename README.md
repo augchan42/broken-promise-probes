@@ -22,6 +22,8 @@ These are the four questions TARA asks of every final project.
 
 Losing oversight of a capable AI agent that deceives the people running it. An agent that acts for a company or a person can commit to one thing and plan another. If it also keeps that plan out of what it writes, the people responsible for it find out only after the action has run. The more that agents negotiate, trade and act without a human checking each step, the more this costs. This is the setting AI control studies: a model that may not be trustworthy, monitored by the party that runs it ([Greenblatt et al.](https://arxiv.org/abs/2312.06942)).
 
+There is one documented case of the behaviour. In a 2026 UK AI Security Institute test, an agent that was never told to deceive used fake identities and edited its earlier activity to look harmless. That deception was aimed at third parties, not at the agent's operators, and AISI says it cannot yet say how likely such behaviour is outside testing ([incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing)). The game in this project is a safe place to measure broken promises. It gives no estimate of real-world risk.
+
 ### How does the project aim to reduce it?
 
 It tests one monitoring tool against another, on deception the model chose for itself.
@@ -30,13 +32,15 @@ It tests one monitoring tool against another, on deception the model chose for i
 - **A cheap first screen.** A linear probe is one dot product on activations the model has already computed. If it worked, it could run on every message and send only flagged cases to a slower monitor.
 - **Who can use it.** Whoever runs the model has the activations. For an open-weight model that is the deployer. The probe does nothing for someone negotiating against a closed model they cannot inspect.
 
+This project tests only the first link, whether the probe ranks later breaches better than the text monitor on the same cases. A deployment would also need evidence that the probe carries over to other settings, a false alarm rate that fits the reviewers' time, and a warning that arrives early enough to act on.
+
 ### What was done?
 
 Seven copies of Qwen3.5-27B played full games against each other. The scored test used four development games and eight test games. Reviewers labelled promises without seeing the orders, and the orders showed which promises were broken. A rule fixed before scoring said how much the probe had to add. It added half of that, so it failed. The sections below give the numbers, how to read them, and three pieces you can run.
 
 ### What gap does it fill?
 
-I found no earlier study that combines three things: promises the model makes without being told to deceive, labels that come from the model's own later actions, and probes on that model's activations. Most deception-probe results use instructed deception, where the prompt tells the model to lie. Earlier work on broken promises in games measured behaviour and did not read activations. The [bibliography](docs/feedback/2026-11-15-presentation-bibliography.md) lists the closest work and how far each source was checked.
+I found no earlier study that combines three things: promises the model makes without being told to deceive, labels that come from the model's own later actions, and probes on that model's activations. Most deception-probe results use instructed deception, where the prompt tells the model to lie. Earlier work covers the parts separately. [Duffy et al.](https://arxiv.org/abs/2508.07485) track whether Diplomacy orders honour negotiated promises. [Cheap Talk, Empty Promise](https://arxiv.org/abs/2604.04782) measures whether models keep commitments in one-shot games. Both measure behaviour and do not read activations. [Goldowsky-Dill et al.](https://proceedings.mlr.press/v267/goldowsky-dill25a.html) test probes for strategic deception, and the UK AI Security Institute released a probe of that kind for Qwen3.5-27B, and [its test on these promises](analysis/results/aisi-probe-zero-shot/README.md) was inconclusive. The [bibliography](docs/feedback/2026-11-15-presentation-bibliography.md) lists the closest work and how far each source was checked.
 
 The result is also a caution. In this setting a monitor that reads the board, the messages and the reasoning already ranks broken promises well, and the probe added little to it.
 
@@ -45,6 +49,7 @@ The result is also a caution. In this setting a monitor that reads the board, th
 - **It measures monitor quality.** The test asks whether a second signal ranks broken promises better than the first. It is not a control evaluation. Nothing here tests a model that is trying to get past the monitor.
 - **The baseline is strong.** The text monitor reads the model's written reasoning and the sent promise. The probe reads the model one token before the promise is sent. A monitor that could not see the reasoning would be easier to beat. That comparison is the first item in the [exploration plan](docs/adr/006-exploration-after-the-failed-probe.md).
 - **The label is a broken promise, which is not the same as a lie.** A promise counts as broken when later orders contradict it. The model writes its messages and its orders in separate calls, so it may have changed its plan after the promise. The data cannot separate that from deception at the time of the promise.
+- **The model sometimes misread the board.** The player prompt did not list every opposing army. On six saved positions the original prompt got 15 of 18 board questions right, and adding a territory table raised that to 18 of 18. Some broken promises may be mistakes. See lesson 5 in [What we learned](docs/learnings.md).
 - **The probe is a correlation.** It is a linear readout of one block at one token. It makes no claim about how the model decides to break a promise. The one causal test in this repository, swapping the values of three neurons, did not change the answer.
 - **The sample is small.** There are 23 broken promises in eight games, and one game supplied most of the gain. The interval of -0.021 to +0.088 includes both no gain and a gain above the required +0.050.
 
