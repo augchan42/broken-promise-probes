@@ -1,0 +1,13 @@
+# Can looking inside a model help predict broken promises?
+
+Augustin Chan · TARA · One-page report draft
+
+**Giving each game equal weight, adding the probe raised the ranking score (AUROC) from 0.840 to 0.864. Giving each kept–broken pair within a game equal weight, both methods scored 0.839. The probe failed the rule set before testing.** AUROC measures how often a broken promise ranks above a kept one. Most of the gain in the equal-game average came from one game with a single breach. [Measurement audit](../../analysis/results/eight-game-reasoning-end/README.md#measurement-audit)
+
+I tested whether someone running a negotiating model could get an early warning by looking inside it. Seven copies of Qwen3.5-27B played Warring States against one another. I counted a breach when a player submitted a move into territory covered by its promise that round. The models were fitted on 90 commitments from four games and tested on 185 commitments, including 23 breaches, from eight separate games.
+
+The baseline read the board, inbox, and written reasoning, and used a monitor that also saw the sent promise. The second predictor added a readout from block 31 just before the promise went out. Each predictor ranked the promises in each game. Reviewing the top quarter per game, rounded up, gave 49 slots. The baseline caught 15 breaches and the probe raised that to 17. Two extra catches met the minimum but fell below the shuffle threshold of three. The ranking gain of +0.025 fell short of the required +0.050. Its 95% interval ran from −0.021 to +0.088. [Frozen evaluation](../../analysis/results/eight-game-reasoning-end/README.md)
+
+Later checks found no block that reached the +0.050 margin. Reading the model at the start of the order call ranked breaches worse than the earlier readout. The catch advantage varied with the review budget. In a separate Luoyang pilot, both ways of reading ownership from the model were less accurate than always guessing Chu. [Follow-ups](../../analysis/results/eight-game-reasoning-end/README.md#exploratory-follow-ups) · [Luoyang pilot](../../analysis/results/herrmann-board-pilot/README.md)
+
+The evidence for added warning was small and concentrated in a few games. A later move can break a promise because the model changed course or because the promise was unclear. A blinded review questioned the wording or scope in four of 12 cases. The experiment measures whether the probe predicts the move, while intent at the time of the promise remains uncertain. [Blinded review](../../analysis/results/eight-game-reasoning-end/README.md#blinded-review-of-12-saved-cases)
