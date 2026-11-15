@@ -41,5 +41,4 @@ If you are a TARA participant or staff member, you already have access to them t
 ## How the project uses them
 
 - The [project plan](feedback/2026-11-15-detailed-project-plan.md) follows the structure the Participant Project Guide asks for.
-- The probe method starts from the linear probes week.
-- The review-budget measure, which counts breaches caught when a quarter of each game's promises are reviewed, comes from the AI control week.
+- The linear probes, evaluations and AI control weeks are the course background for the probe, the baseline comparison and the review-budget measure.
