@@ -1,0 +1,13 @@
+=== Round 9 Results ===
+  qin moves into wuguan_pass (strength 1)
+  Standoff at song: wei, qi all attack with strength 1
+  Standoff at zheng: qin, wei all attack with strength 1
+  zhao fails to take yunzhong (attack 1 vs defense 2)
+  zhao takes jibei from qi (attack 2 vs defense 1)
+  chu takes chenliu from wei (attack 1 vs defense 0)
+  qi retreats from jibei to linzi
+  wei retreats from chenliu to huai_river
+  chu builds at ying
+  wei disbands at huai_river
+  [qin: 5 SC | han: 2 SC | wei: 3 SC | zhao: 5 SC | qi: 3 SC | chu: 6 SC | yan: 3 SC]
+  [board: 9 free captures]

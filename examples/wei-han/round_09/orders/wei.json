@@ -1,0 +1,30 @@
+{
+  "raw_response": "\n\n{\n  \"orders\": [\n    {\n      \"unit\": \"yewang\",\n      \"order\": \"move\",\n      \"target\": \"zheng\",\n      \"reasoning\": \"Capture Han SC to deny Qin expansion and increase Wei supply centers.\"\n    },\n    {\n      \"unit\": \"henei\",\n      \"order\": \"hold\",\n      \"reasoning\": \"Defend against potential Qin advance from Hangu Pass corridor.\"\n    },\n    {\n      \"unit\": \"daliang\",\n      \"order\": \"support\",\n      \"support_state\": \"wei\",\n      \"support_action\": \"hold\",\n      \"target\": \"henei\",\n      \"reasoning\": \"Reinforce Henei defense to ensure stability against western threats.\"\n    },\n    {\n      \"unit\": \"chenliu\",\n      \"order\": \"move\",\n      \"target\": \"song\",\n      \"reasoning\": \"Expand eastwards into Qi territory to gain additional supply center.\"\n    }\n  ]\n}",
+  "orders": [
+    {
+      "unit": "yewang",
+      "order": "move",
+      "target": "zheng",
+      "reasoning": "Capture Han SC to deny Qin expansion and increase Wei supply centers."
+    },
+    {
+      "unit": "henei",
+      "order": "hold",
+      "reasoning": "Defend against potential Qin advance from Hangu Pass corridor."
+    },
+    {
+      "unit": "daliang",
+      "order": "support",
+      "support_state": "wei",
+      "support_action": "hold",
+      "target": "henei",
+      "reasoning": "Reinforce Henei defense to ensure stability against western threats."
+    },
+    {
+      "unit": "chenliu",
+      "order": "move",
+      "target": "song",
+      "reasoning": "Expand eastwards into Qi territory to gain additional supply center."
+    }
+  ]
+}
