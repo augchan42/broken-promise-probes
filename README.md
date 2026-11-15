@@ -58,6 +58,12 @@ The game transcripts, the model's reasoning, the case-level labels with their te
 
 This repository publishes one development case in full and the numbers needed to reproduce the eight-game score. That is a recorded exception to the rule in the [findings to date](docs/feedback/2026-11-15-findings-to-date.md) that traces, case-level labels and activations stay private. Where a document referred to an unpublished file, the link is now plain text.
 
+## Course context
+
+This is my final project for TARA, the Technical Alignment Research Accelerator, Round 2 2026, Hong Kong cohort. The project follows TARA's participant project guide, its one-page report template, and its course weeks on linear probes, evaluations and AI control.
+
+Those course materials belong to the TARA team and are not published here. [docs/tara-course-materials.md](docs/tara-course-materials.md) lists the ones this project draws on.
+
 ## How AI tools were used
 
 I wrote the code, analysis and documents in this repository with AI coding assistants, Claude Code and Codex. I chose the questions, the tests and the pass rule, ran the experiments, and reviewed the results. The assistants wrote most of the code and drafted most of the text, which I edited.
