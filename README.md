@@ -14,6 +14,32 @@ A baseline that reads the messages, the board and the model's written reasoning 
 
 The [project plan](docs/feedback/2026-11-15-detailed-project-plan.md) says what comes next. [What we learned](docs/learnings.md) lists the mistakes and what each one taught us.
 
+## Why this project
+
+These are the four questions TARA asks of every final project.
+
+### Which catastrophic risk is this about?
+
+Losing oversight of a capable AI agent that deceives the people running it. An agent that acts for a company or a person can commit to one thing and plan another. If it also keeps that plan out of what it writes, the people responsible for it find out only after the action has run. The more that agents negotiate, trade and act without a human checking each step, the more this costs. This is the setting AI control studies: a model that may not be trustworthy, monitored by the party that runs it ([Greenblatt et al.](https://arxiv.org/abs/2312.06942)).
+
+### How does the project aim to reduce it?
+
+It tests one monitoring tool against another, on deception the model chose for itself.
+
+- **A second monitor that fails differently.** Reading the model's written reasoning works while the model writes its plans down. Models can learn to keep intent out of their reasoning ([Baker et al.](https://arxiv.org/abs/2503.11926)). [Korbak et al.](https://arxiv.org/abs/2507.11473) call for checking reasoning monitors against methods that read the model's activations. This project is one such check.
+- **A cheap first screen.** A linear probe is one dot product on activations the model has already computed. If it worked, it could run on every message and send only flagged cases to a slower monitor.
+- **Who can use it.** Whoever runs the model has the activations. For an open-weight model that is the deployer. The probe does nothing for someone negotiating against a closed model they cannot inspect.
+
+### What was done?
+
+Seven copies of Qwen3.5-27B played full games against each other. The scored test used four development games and eight test games. Reviewers labelled promises without seeing the orders, and the orders showed which promises were broken. A rule fixed before scoring said how much the probe had to add. It added half of that, so it failed. The sections below give the numbers, how to read them, and three pieces you can run.
+
+### What gap does it fill?
+
+I found no earlier study that combines three things: promises the model makes without being told to deceive, labels that come from the model's own later actions, and probes on that model's activations. Most deception-probe results use instructed deception, where the prompt tells the model to lie. Earlier work on broken promises in games measured behaviour and did not read activations. The [bibliography](docs/feedback/2026-11-15-presentation-bibliography.md) lists the closest work and how far each source was checked.
+
+The result is also a caution. In this setting a monitor that reads the board, the messages and the reasoning already ranks broken promises well, and the probe added little to it.
+
 ## How to read the result
 
 - **It measures monitor quality.** The test asks whether a second signal ranks broken promises better than the first. It is not a control evaluation. Nothing here tests a model that is trying to get past the monitor.
