@@ -10,7 +10,7 @@
 
 **Problem**
 
-A capable AI agent could conceal that a planned action breaks a commitment its operator relies on. If its messages and written reasoning give little warning, the operator has too little time to intervene.
+A capable AI agent could conceal that a planned action breaks a commitment its operator relies on. If its messages and written reasoning give little warning, the operator has too little time to intervene. This is a deception and oversight risk. A monitor that reads only what the model writes can be told one thing while the model does another.
 
 **Goal**
 
@@ -32,7 +32,7 @@ A measured answer to one question. Do a model's activations predict its promise 
   2. *A stronger probe.* My probe read one block at one token. Recent work pools scores across tokens and combines several blocks. [Multi-layer probes](https://arxiv.org/abs/2604.13386)
   3. *Sparse autoencoder features.* Qwen-Scope publishes sparse autoencoders for every block of this model. I will use them to describe what the saved activations encode, and compare a probe on those features with the probe on raw activations. Earlier comparisons favour raw activations for detection, so I expect description to be the main use. [Qwen-Scope](https://arxiv.org/abs/2605.11887) · [Probes and sparse autoencoders compared](https://arxiv.org/abs/2502.16681)
   4. *Single neurons on synthetic boards.* I have already screened individual MLP neurons on short prompts that tell the model to lie. The three shortlisted neurons had a negligible effect on the answer and did not carry over to the games. [Findings to date](https://github.com/augchan42/broken-promise-probes/blob/main/docs/feedback/2026-11-15-findings-to-date.md)
-- **Rule for the exploration.** The eight games have now been scored, so every new result on them is exploratory and the report will label it that way. The verdict on the first test stays as recorded.
+- **Rule for the exploration.** The eight games have now been scored, so every new result on them is exploratory and the report will label it that way. The verdict on the first test stays as recorded. This measures monitor quality. It is not a control evaluation.
 
 **Out of scope**
 
@@ -63,4 +63,4 @@ A new pass or fail claim on the eight scored games, training my own sparse autoe
 
 **What resources do I need?**
 
-The first two weeks use the saved activations, the public Qwen-Scope weights and my own Mac. I have committed no paid compute. I will decide on any paid GPU run at the 28 Nov checkpoint. A pointer to the best current reference on probes against text monitors would help.
+The first two weeks use the saved activations, the public Qwen-Scope weights and my own Mac. Compute so far is $64.02 on RunPod, all for generating the games. That is over the $50 TARA covers, and I will pay the difference. I plan no further paid compute. If a candidate needs new games, I will ask for approval before the 28 Nov checkpoint. A pointer to the best current reference on probes against text monitors would help.

@@ -14,6 +14,14 @@ A baseline that reads the messages, the board and the model's written reasoning 
 
 The [project plan](docs/feedback/2026-11-15-detailed-project-plan.md) says what comes next. [What we learned](docs/learnings.md) lists the mistakes and what each one taught us.
 
+## How to read the result
+
+- **It measures monitor quality.** The test asks whether a second signal ranks broken promises better than the first. It is not a control evaluation. Nothing here tests a model that is trying to get past the monitor.
+- **The baseline is strong.** The text monitor reads the model's written reasoning and the sent promise. The probe reads the model one token before the promise is sent. A monitor that could not see the reasoning would be easier to beat. That comparison is the first item in the [exploration plan](docs/adr/006-exploration-after-the-failed-probe.md).
+- **The label is a broken promise, which is not the same as a lie.** A promise counts as broken when later orders contradict it. The model writes its messages and its orders in separate calls, so it may have changed its plan after the promise. The data cannot separate that from deception at the time of the promise.
+- **The probe is a correlation.** It is a linear readout of one block at one token. It makes no claim about how the model decides to break a promise. The one causal test in this repository, swapping the values of three neurons, did not change the answer.
+- **The sample is small.** There are 23 broken promises in eight games, and one game supplied most of the gain. The interval of -0.021 to +0.088 includes both no gain and a gain above the required +0.050.
+
 ## Three things you can run
 
 Each takes under a minute on a laptop. None needs a GPU or the model.
