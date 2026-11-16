@@ -12,7 +12,14 @@ The probe did not pass its test.
 
 A baseline that reads the messages, the board and the model's written reasoning scored a mean AUROC of 0.840 across eight games (185 promises, 23 broken). Adding a linear probe on block 31 raised that to 0.864. The gain of +0.025 was half the +0.050 that the rule, fixed before scoring, required. The 95% interval was -0.021 to +0.088.
 
-The [project plan](docs/feedback/2026-11-15-detailed-project-plan.md) says what comes next. [What we learned](docs/learnings.md) lists the mistakes and what each one taught us.
+### Completed follow-ups
+
+Two exploratory comparisons used the same 90 development promises and 185 test promises. Neither changes the original **fail** verdict.
+
+- **Hide the reasoning from Claude.** Claude saw the board, legal options, inbox and sent promise, but not Qwen's private reasoning. The fitted baseline also excluded reasoning words and length. Adding the same block 31 readout changed mean per-game AUROC from **0.8535 to 0.8538**, a gain of **+0.0003** (95% whole-game bootstrap interval **-0.059 to +0.047**). It caught 17 rather than 15 breaches in 49 review slots, but Claude's estimate alone already caught 17. The within-game pair-weighted AUROC improved from 0.7893 to 0.8264. Hiding the reasoning did not reveal a convincing gain on the primary, equal-game measure.
+- **Use Qwen-Scope features instead of raw activations.** Encoding the same block 31 readout with the released sparse autoencoder did not improve mean per-game AUROC. With the original reasoning-visible baseline, the score went from **0.8644 raw to 0.8594 SAE**; with the reasoning-hidden baseline, **0.8538 to 0.8310**. These are comparisons between raw and SAE-augmented predictors, not baseline-only scores. No feature meaning has yet been validated. Reconstruction was only about 5% better than predicting the development mean activation, after correcting the decoder offset, which limits interpretation.
+
+These follow-ups are summarized here; `reproduce_headline.py` reproduces the original frozen comparison, not these additional runs. The [project plan](docs/feedback/2026-11-15-detailed-project-plan.md) and [exploration plan](docs/adr/006-exploration-after-the-failed-probe.md) predate these completed comparisons. [What we learned](docs/learnings.md) lists the mistakes and what each one taught us.
 
 ## Why this project
 
@@ -47,7 +54,7 @@ The result is also a caution. In this setting a monitor that reads the board, th
 ## How to read the result
 
 - **It measures monitor quality.** The test asks whether a second signal ranks broken promises better than the first. It is not a control evaluation. Nothing here tests a model that is trying to get past the monitor.
-- **The baseline is strong.** The text monitor reads the model's written reasoning and the sent promise. The probe reads the model one token before the promise is sent. A monitor that could not see the reasoning would be easier to beat. That comparison is the first item in the [exploration plan](docs/adr/006-exploration-after-the-failed-probe.md).
+- **The baseline is strong.** The text monitor reads the model's written reasoning and the sent promise. The probe reads the model one token before the promise is sent. The completed reasoning-hidden comparison above found almost no equal-game AUROC gain from adding the probe, despite removing reasoning from the text baseline.
 - **The label is a broken promise, which is not the same as a lie.** A promise counts as broken when later orders contradict it. The model writes its messages and its orders in separate calls, so it may have changed its plan after the promise. The data cannot separate that from deception at the time of the promise.
 - **The model sometimes misread the board.** The player prompt did not list every opposing army. On six saved positions the original prompt got 15 of 18 board questions right, and adding a territory table raised that to 18 of 18. Some broken promises may be mistakes. See lesson 5 in [What we learned](docs/learnings.md).
 - **The probe is a correlation.** It is a linear readout of one block at one token. It makes no claim about how the model decides to break a promise. The one causal test in this repository, swapping the values of three neurons, did not change the answer.
