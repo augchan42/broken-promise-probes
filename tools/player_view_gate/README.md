@@ -95,7 +95,7 @@ Codex, in `.codex/hooks.json`:
 }
 ```
 
-Codex runs the hook only in a trusted project and only after you trust the hook itself. Until then it skips the hook and runs the command. In a linked git worktree, Codex reads `.codex/hooks.json` from the main checkout, so the main checkout must be on a branch that has that file.
+Codex runs the hook only in a trusted project and only after you trust the hook itself. Until then it skips the hook and runs the command. In a linked git worktree, Codex reads `.codex/hooks.json` from the main checkout, so the main checkout must be on a branch that has that file. The worktree also needs a `.codex` folder of its own, or Codex loads no project hook there.
 
 OpenCode: copy `opencode-plugin.js` to `.opencode/plugins/player-view-gate.js`.
 
