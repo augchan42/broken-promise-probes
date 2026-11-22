@@ -1,0 +1,16 @@
+{
+  "views_dir": ".player-views",
+  "register": "docs/player-view-approvals.json",
+  "launchers": [
+    "(^|/)scripts/run_[^/]*\\.(sh|py)$"
+  ],
+  "markers": [
+    "chat/completions",
+    "/v1/completions",
+    "messages\\.create\\(",
+    "(from|import) mlx_lm",
+    "\\.generate\\("
+  ],
+  "staging_args": ["stage", "--dry-run", "--help", "-h"],
+  "not_launch": []
+}
