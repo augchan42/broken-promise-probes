@@ -1,6 +1,6 @@
 # Player view gate
 
-A hook for AI coding assistants. It blocks a command that starts a model run until the project owner has read what the model receives.
+A hook for AI coding assistants: Claude Code, Codex and OpenCode. It blocks a command that starts a model run until the project owner has read what the model receives.
 
 ## Why
 
@@ -64,7 +64,7 @@ Claude Code, in `.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/player_view_gate/player_view_gate.py\" check",
+            "command": "s=\"$CLAUDE_PROJECT_DIR/tools/player_view_gate/player_view_gate.py\"; [ ! -f \"$s\" ] || python3 \"$s\" check",
             "timeout": 10
           }
         ]
@@ -85,7 +85,7 @@ Codex, in `.codex/hooks.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$(git rev-parse --show-toplevel)/tools/player_view_gate/player_view_gate.py\" check",
+            "command": "s=\"$(git rev-parse --show-toplevel)/tools/player_view_gate/player_view_gate.py\"; [ -f \"$s\" ] || s=\"$(dirname \"$(git rev-parse --path-format=absolute --git-common-dir)\")/tools/player_view_gate/player_view_gate.py\"; [ ! -f \"$s\" ] || python3 \"$s\" check",
             "timeout": 10
           }
         ]
@@ -95,7 +95,18 @@ Codex, in `.codex/hooks.json`:
 }
 ```
 
-The hook exits with code 2 and writes the reason to stderr. Both assistants treat that as a blocked command.
+Codex runs the hook only in a trusted project and only after you trust the hook itself. Until then it skips the hook and runs the command. In a linked git worktree, Codex reads `.codex/hooks.json` from the main checkout, so the main checkout must be on a branch that has that file.
+
+OpenCode: copy `opencode-plugin.js` to `.opencode/plugins/player-view-gate.js`.
+
+```
+mkdir -p .opencode/plugins
+cp tools/player_view_gate/opencode-plugin.js .opencode/plugins/player-view-gate.js
+```
+
+The hook exits with code 2 and writes the reason to stderr. Claude Code and Codex treat that as a blocked command. The OpenCode plugin turns it into a tool error, which also stops the command.
+
+When the script is not in the checkout, such as on an older branch, all three let commands through. Without that check `python3` exits with code 2 for the missing file and every command is blocked.
 
 Run the tests:
 
