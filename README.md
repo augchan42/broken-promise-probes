@@ -97,6 +97,7 @@ The page shows three MLP neurons on short made-up prompts that tell the model to
 - `analysis/results/` has the result write-ups with aggregate numbers and figures.
 - `research_notes/` has working notes on the literature. Claims marked unverified were not checked against the source.
 - `analysis/` has the scoring scripts, for reading. They need the private data to run.
+- `tools/player_view_gate/` has a hook for Claude Code and Codex. It blocks a model run until I have read what the model receives. It needs no private data. [Why I wrote it and how to install it](tools/player_view_gate/README.md).
 
 ## What is withheld
 
