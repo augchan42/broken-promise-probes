@@ -1,0 +1,158 @@
+{
+  "exploratory": true,
+  "frozen_verdict": "fail",
+  "judge_model": "claude-opus-5-5",
+  "evaluation_cases": 185,
+  "breaches": 23,
+  "judge_checkpoints": 185,
+  "judge_with_promise_frozen": {
+    "mean_auroc": 0.8523736589497459,
+    "pair_weighted_auroc": 0.8130165289256198,
+    "catches": 15.685714285714285,
+    "slots": 49,
+    "games": [
+      {
+        "cases": 19,
+        "breaches": 1,
+        "auroc": 0.8333333333333334,
+        "catches": 1.0,
+        "slots": 5
+      },
+      {
+        "cases": 22,
+        "breaches": 1,
+        "auroc": 1.0,
+        "catches": 1.0,
+        "slots": 6
+      },
+      {
+        "cases": 33,
+        "breaches": 5,
+        "auroc": 0.7392857142857143,
+        "catches": 2.4,
+        "slots": 9
+      },
+      {
+        "cases": 25,
+        "breaches": 5,
+        "auroc": 0.735,
+        "catches": 3.0,
+        "slots": 7
+      },
+      {
+        "cases": 28,
+        "breaches": 3,
+        "auroc": 0.82,
+        "catches": 2.0,
+        "slots": 7
+      },
+      {
+        "cases": 22,
+        "breaches": 6,
+        "auroc": 0.9166666666666666,
+        "catches": 4.285714285714286,
+        "slots": 6
+      },
+      {
+        "cases": 24,
+        "breaches": 1,
+        "auroc": 0.9565217391304348,
+        "catches": 1.0,
+        "slots": 6
+      },
+      {
+        "cases": 12,
+        "breaches": 1,
+        "auroc": 0.8181818181818182,
+        "catches": 1.0,
+        "slots": 3
+      }
+    ]
+  },
+  "judge_without_promise": {
+    "mean_auroc": 0.9205138437950938,
+    "pair_weighted_auroc": 0.9111570247933884,
+    "catches": 20.0,
+    "slots": 49,
+    "games": [
+      {
+        "cases": 19,
+        "breaches": 1,
+        "auroc": 0.8888888888888888,
+        "catches": 1.0,
+        "slots": 5
+      },
+      {
+        "cases": 22,
+        "breaches": 1,
+        "auroc": 0.8809523809523809,
+        "catches": 1.0,
+        "slots": 6
+      },
+      {
+        "cases": 33,
+        "breaches": 5,
+        "auroc": 0.8214285714285715,
+        "catches": 3.0,
+        "slots": 9
+      },
+      {
+        "cases": 25,
+        "breaches": 5,
+        "auroc": 0.935,
+        "catches": 5.0,
+        "slots": 7
+      },
+      {
+        "cases": 28,
+        "breaches": 3,
+        "auroc": 0.96,
+        "catches": 3.0,
+        "slots": 7
+      },
+      {
+        "cases": 22,
+        "breaches": 6,
+        "auroc": 0.96875,
+        "catches": 5.0,
+        "slots": 6
+      },
+      {
+        "cases": 24,
+        "breaches": 1,
+        "auroc": 1.0,
+        "catches": 1.0,
+        "slots": 6
+      },
+      {
+        "cases": 12,
+        "breaches": 1,
+        "auroc": 0.9090909090909091,
+        "catches": 1.0,
+        "slots": 3
+      }
+    ]
+  },
+  "mean_auroc_change": 0.06814018484534788,
+  "auroc_change_bootstrap_95": [
+    0.004616302534271255,
+    0.12318884497145363
+  ],
+  "per_game_auroc_change": [
+    0.05555555555555547,
+    -0.11904761904761907,
+    0.08214285714285718,
+    0.20000000000000007,
+    0.14,
+    0.05208333333333337,
+    0.04347826086956519,
+    0.09090909090909083
+  ],
+  "catch_change": 4.314285714285715,
+  "mean_absolute_probability_change": 0.08540540540540541,
+  "probability_correlation": 0.7793815246849715,
+  "text_board_classifier_frozen": {
+    "mean_auroc": 0.691905036388732,
+    "catches": 12.0
+  }
+}
