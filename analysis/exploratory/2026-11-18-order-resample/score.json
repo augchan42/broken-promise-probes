@@ -1,0 +1,129 @@
+{
+  "exploratory": true,
+  "frozen_verdict": "fail",
+  "cases": 12,
+  "samples_per_case_planned": 5,
+  "samples_done": 60,
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "think_budget": 8192,
+    "answer_tokens": 1024,
+    "model_index_sha256": "0c1be5ad32fc2b1a79f5a2f5c6336be092e7ace88f621505d80d6d6412ff772e"
+  },
+  "cases_by_pattern": {
+    "all_kept": 7,
+    "mixed": 4,
+    "all_breached": 1
+  },
+  "originally_breached": {
+    "breached": 17,
+    "valid_samples": 30,
+    "other": 0
+  },
+  "originally_kept": {
+    "breached": 0,
+    "valid_samples": 29,
+    "other": 1
+  },
+  "per_case": [
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 3,
+      "kept": 2,
+      "other": 0,
+      "forced_closures": 1
+    },
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 2,
+      "kept": 3,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 4,
+      "kept": 1,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 3,
+      "kept": 2,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "breached",
+      "samples": 5,
+      "breached": 5,
+      "kept": 0,
+      "other": 0,
+      "forced_closures": 1
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 4,
+      "other": 1,
+      "forced_closures": 1
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 0
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 1
+    },
+    {
+      "original": "kept",
+      "samples": 5,
+      "breached": 0,
+      "kept": 5,
+      "other": 0,
+      "forced_closures": 0
+    }
+  ]
+}
