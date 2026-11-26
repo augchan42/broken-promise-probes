@@ -2,7 +2,7 @@
 
 This project tests whether reading a language model's internal activations helps predict that it will break a promise it is about to make.
 
-The model is Qwen3.5-27B. It plays Warring States, a seven-player negotiation game in the style of Diplomacy. Players send each other messages, then submit orders. A promise is broken when the player's orders contradict what it told another player in the same round.
+The model is Qwen3.5-27B. It plays Warring States, a seven-player negotiation game in the style of Diplomacy. The game is the testbed from my earlier research, described at [warringstates.day](https://warringstates.day). Players send each other messages, then submit orders. A promise is broken when the player's orders contradict what it told another player in the same round.
 
 A deployer who had a reliable warning could pause and check a proposed action before it runs. The question is whether activations give a better warning than reading the model's text.
 
@@ -104,7 +104,7 @@ The page shows three MLP neurons on short made-up prompts that tell the model to
 
 ## What is withheld
 
-The game transcripts, the model's reasoning, the case-level labels with their text, and the full activation captures stay in private storage. The game engine is also not included.
+The game transcripts, the model's reasoning, the case-level labels with their text, and the full activation captures stay in private storage. The game engine is also not included. It comes from the earlier research at [warringstates.day](https://warringstates.day).
 
 This repository publishes one development case in full and the numbers needed to reproduce the eight-game score. That is a recorded exception to the rule in the [findings to date](docs/feedback/2026-11-15-findings-to-date.md) that traces, case-level labels and activations stay private. Where a document referred to an unpublished file, the link is now plain text.
 
