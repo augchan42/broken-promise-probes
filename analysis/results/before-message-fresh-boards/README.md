@@ -1,6 +1,6 @@
 # Can activations flag a misleading message before it is written?
 
-> **Public copy.** This folder is copied from the private working repository, which holds the game data. The runner scripts and the pilot plans named below are not included because they import modules or read run directories that are only there. The JSON files hold aggregate scores only.
+> **Public copy.** This folder is copied from the private working repository, which holds the game data. The runner scripts and the before-message pilot plan named below are not included because they import modules or read run directories that are only there. The JSON files hold aggregate scores only.
 
 **At zero observed false alarms, the best result was 9 catches out of 84 misleading replies.** Direct Qwen caught nine, Opus 5.5 caught five, FIBS caught two, and Qwen's written-percentage judge caught none. Those cutoffs were chosen after seeing the fresh results.
 
@@ -101,4 +101,4 @@ On 24 Nov, Opus had mean within-board AUROC of 0.942 and FIBS had 0.852. FIBS ra
 
 The Qwen judge runners reuse the same saved inputs under `~/tara-runs` and the pinned local Qwen3.5-27B BF16 model. Run their `stage` command to render an exact sample prompt, then follow the [player-view approval workflow](../../../tools/player_view_gate/README.md) before running the model. Each completed score is checkpointed. The `report` command joins the private scores with the existing reply labels and writes the aggregate comparison. Keep prompts, replies and per-reply scores in the local run directories.
 
-The FIBS reproduction plan records the earlier check of the released weights on the authors' transcripts. [ADR-008](../../../docs/adr/008-auroc-and-monitoring-metrics.md) explains how to report catches, false alarms and AUROC in future comparisons.
+The [FIBS reproduction plan](../../../docs/superpowers/plans/2026-11-24-fibs-promise-probe-pilot.md#0-check-the-released-probes-on-the-authors-data) records the earlier check of the released weights on the authors' transcripts. [ADR-008](../../../docs/adr/008-auroc-and-monitoring-metrics.md) explains how to report catches, false alarms and AUROC in future comparisons.
